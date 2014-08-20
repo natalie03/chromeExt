@@ -1,0 +1,14 @@
+
+h1{
+  font-family:century;
+  font-size: 1em;
+  text-align:center;
+}
+
+.build ul{
+  list-style:none;
+  padding:0;
+}
+.build{
+  text-align:left;
+}
