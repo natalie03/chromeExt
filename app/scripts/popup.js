@@ -12,7 +12,7 @@ $.ajax({
         if(tatDat[i].data.thumbnail === "nsfw" || tatDat[i].data.thumbnail === "self"){
 
         } else {
-        toAdd += "<li><img src='" + tatDat[i].data.thumbnail + "'></img></li>"
+        toAdd += "<li><a href='http://www.reddit.com" + tatDat[i].data.permalink + "'><img src='" + tatDat[i].data.thumbnail + "'></img></a></li>"
       }
 
     }
