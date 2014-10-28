@@ -1,4 +1,3 @@
-
 $.ajax({
     url: 'http://www.reddit.com/r/tattoos.json',
     method: 'GET',
@@ -7,11 +6,13 @@ $.ajax({
 
       var toAdd = "<ul>"
       for (var i = 1; i <11; i++){
-        console.log(data.data.children[i].data.thumbnail);
-        if(data.data.children[i].data.thumbnail === "nsfw"){
+        var tatDat = data.data.children;
 
-        }else {
-        toAdd += "<li><img src='" + data.data.children[i].data.thumbnail + "'></a></li>"
+        console.log(tatDat[i].data.thumbnail);
+        if(tatDat[i].data.thumbnail === "nsfw" || tatDat[i].data.thumbnail === "self"){
+
+        } else {
+        toAdd += "<li><img src='" + tatDat[i].data.thumbnail + "'></img></li>"
       }
 
     }
